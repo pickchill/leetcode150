@@ -20,15 +20,15 @@
 
 // console.log(removeDuplicates((nums = [1, 1, 2])));
 
-// var removeDuplicates = (nums) => {
-//   let index = 0;
-//   for (let i = 1; i < nums.length; i++) {
-//     if (nums[index] !== nums[i]) {
-//       nums[++index] = nums[i];
-//     }
-//   }
-//   return index + 1;
-// };
+var removeDuplicatesCommon = (nums) => {
+  let index = 0;
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[index] !== nums[i]) {
+      nums[++index] = nums[i];
+    }
+  }
+  return index + 1;
+};
 // console.log(removeDuplicates((nums = [1, 1, 2])));
 
 /**
